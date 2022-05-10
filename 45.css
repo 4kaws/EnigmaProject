@@ -1,4 +1,12 @@
 p {
     color: black;
-    font-size: 20px;
-}
+    font-size: 20px;}
+
+ body{
+      font-family: FontCustom;
+          }
+@font-face {
+font-family: FontCustom;
+    src: url('AppleGaramond.ttf');
+    src: url('AppleGaramond.ttf') format('embedded-opentype'),
+      }

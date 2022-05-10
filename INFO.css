@@ -1,6 +1,9 @@
 *{
     margin: auto;
 }
+body{
+  font-family: FontCustom;
+}
 header {
     display:flex;
     background-color: white;
@@ -38,3 +41,9 @@ header {
 
  h1 {text-align: center;}
 p {text-align: center;}
+
+@font-face {
+  font-family: FontCustom;
+  src: url('AppleGaramond.ttf');
+  src: url('AppleGaramond.ttf') format('embedded-opentype'),
+}
