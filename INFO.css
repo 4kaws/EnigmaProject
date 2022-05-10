@@ -1,0 +1,40 @@
+*{
+    margin: auto;
+}
+header {
+    display:flex;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    width: 100%;
+    border-top: 1px solid white;
+    justify-content:center;
+       align-items:center;
+     
+    
+    }
+
+.home {
+    color: black;
+    font-size: 14px;
+ margin:auto;
+  }
+  
+  .address {
+    color: black;
+    font-size: 14px;
+  margin:auto;
+  }
+
+  a { color: black; 
+ }
+
+ a:link {
+   text-decoration: none;
+ }
+
+ h1 {text-align: center;}
+p {text-align: center;}
