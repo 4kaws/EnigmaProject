@@ -68,7 +68,7 @@
 
       @font-face {
         font-family: FontCustom;
-        src: url('/Users/andrei/Desktop/POO/assets2/AppleGaramond.ttf');
-        src: url('/Users/andrei/Desktop/POO/assets2/AppleGaramond.ttf') format('embedded-opentype'),
+        src: url('AppleGaramond.ttf');
+        src: url('AppleGaramond.ttf') format('embedded-opentype'),
       }
   
