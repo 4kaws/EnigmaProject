@@ -2,7 +2,7 @@
     margin: auto;
     width: 10%;
     padding-left: 50px;
-    padding-right: 20pxß;
+    padding-right: 20px;
 
   }
  
@@ -68,7 +68,7 @@
 
       @font-face {
         font-family: FontCustom;
-        src: url('AppleGaramond.ttf');
-        src: url('AppleGaramond.ttf') format('embedded-opentype'),
+        src: url('/Users/andrei/Desktop/POO/assets2/AppleGaramond.ttf');
+        src: url('/Users/andrei/Desktop/POO/assets2/AppleGaramond.ttf') format('embedded-opentype'),
       }
   
