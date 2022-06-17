@@ -18,7 +18,12 @@
 
     <h2>Read line by line</h2>
     
- 
+    @{
+        var date = DateTime.Now.ToShortDateString();
+        string message = "Hello World!";
+        <text>Today's date is:</text> @date <br />
+        @message                               
+    }
 
     
 </body>
