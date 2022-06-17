@@ -14,7 +14,7 @@ function changeBackground(){
     body.style.background = colorString;
     color.innerText = colorString;
 
-    setTimeout(() => window.open('https://drive.google.com/file/d/1YEXiVtaCZIOMJIP3C5JeWitQJCBA9xnP/view?usp=sharing'), 1000);
+    setTimeout(() => window.open('https://drive.google.com/file/d/16L-m0GRl6x_cZZLHi-5C0tJDl6XmORhG/view?usp=sharing'), 1000);
 }
 
 function getRandomRGB(){
