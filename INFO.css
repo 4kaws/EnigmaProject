@@ -22,13 +22,13 @@ header {
 
 .home {
     color: black;
-    font-size: 14px;
+    font-size: 18px;
  margin:auto;
   }
   
   .address {
     color: black;
-    font-size: 14px;
+    font-size: 18px;
   margin:auto;
   }
 
@@ -41,6 +41,11 @@ header {
 
  h1 {text-align: center;}
 p {text-align: center;}
+
+#log,#titlu{
+  margin-top: 15px;
+}
+
 
 @font-face {
   font-family: FontCustom;
