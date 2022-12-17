@@ -2,6 +2,13 @@
 <html>
 <head>
   <style>
+    /* Style the Wordle game */
+    #game {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
     /* Style the Wordle tiles */
     .tile {
       display: inline-block;
@@ -17,19 +24,22 @@
   </style>
 </head>
 <body>
-  <!-- Display the shuffled word -->
-  <div id="word"></div>
-  
-  <!-- Display a message for the player -->
-  <div id="message"></div>
-  
-  <!-- Create a form for the player's guess -->
-  <form onsubmit="handleGuess(); return false;">
-    <!-- Create a text field for the player's guess -->
-    <input type="text" id="guess" maxlength="5">
-    <!-- Create a button to submit the player's guess -->
-    <button type="submit">Guess</button>
-  </form>
+  <!-- Create a container for the Wordle game -->
+  <div id="game">
+    <!-- Display the shuffled word -->
+    <div id="word"></div>
+    
+    <!-- Display a message for the player -->
+    <div id="message"></div>
+    
+    <!-- Create a form for the player's guess -->
+    <form onsubmit="handleGuess(); return false;">
+      <!-- Create a text field for the player's guess -->
+      <input type="text" id="guess" maxlength="5">
+      <!-- Create a button to submit the player's guess -->
+      <button type="submit">Guess</button>
+    </form>
+  </div>
   
   <script>
     // Array of words for the game
@@ -54,7 +64,13 @@
       
       // Update the shuffled word on the page
       const wordElement = document.getElementById("word");
-      wordElement.innerHTML = shuffledWord;
+      wordElement.innerHTML = "";
+      for (const c of shuffledWord) {
+        const tile = document.createElement("div");
+        tile.classList.add("tile");
+        tile.innerHTML = c;
+        wordElement.appendChild(tile);
+      }
       
       // Set the colors of the tiles based on the word
       for (let i = 0; i < shuffledWord.length; i++) {
@@ -72,17 +88,3 @@
       // Get the player's guess
       const guess = document.getElementById("guess").value;
       
-      // Check if the guess is a valid 5-letter word
-      if (guess.length != 5) {
-        document.getElementById("message").innerHTML = "Please enter a valid 5-letter word.";
-        return;
-      }
-      
-      // Check if the guess is correct
-      if (guess == words[level]) {
-        // Increment the level and update the word
-        level++;
-        updateWord();
-        
-        // Clear the guess and message
-        document.getElementById("guess").value = "";
